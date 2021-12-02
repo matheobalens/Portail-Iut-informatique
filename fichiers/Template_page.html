@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="template.css">
+        <link rel="shortcut icon" type="image/x-icon" href="./Images/Icon_site.ico"/>
+        <link rel="shortcut icon" type="image/x-icon" href="Templates/images/designs/2/favicon.ico"/>
+        <!-- Script d'intégration de font-awesome -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+        <!-- Lien D'intégration de la police Roboto -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+        <title>Mettre le titre de la page ici</title>
+    </head>
+
+<body>
+    <!-- On crée une section qui contient le haut de la page -->
+    <section class="top-page">
+        <header>
+            <!-- On place le logo -->
+            <img id="logo" src="./Images/logo.png" alt="Logo du portail National des IUT">
+        </header>
+        <!-- Les icones représentant le choix des langues -->
+        <div class="lang">
+            <a href="Index.html"><img id="lang"src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHJlY3QgeT0iODUuMzMxIiBzdHlsZT0iZmlsbDojRjBGMEYwOyIgd2lkdGg9IjUxMiIgaGVpZ2h0PSIzNDEuMzM3Ii8+DQo8cmVjdCB5PSI4NS4zMzEiIHN0eWxlPSJmaWxsOiMwMDUyQjQ7IiB3aWR0aD0iMTcwLjY2MyIgaGVpZ2h0PSIzNDEuMzM3Ii8+DQo8cmVjdCB4PSIzNDEuMzM3IiB5PSI4NS4zMzEiIHN0eWxlPSJmaWxsOiNEODAwMjc7IiB3aWR0aD0iMTcwLjY2MyIgaGVpZ2h0PSIzNDEuMzM3Ii8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" /></a>
+            <a href="en-index.html"><img id="lang" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHJlY3QgeT0iODUuMzMzIiBzdHlsZT0iZmlsbDojRjBGMEYwOyIgd2lkdGg9IjUxMiIgaGVpZ2h0PSIzNDEuMzM3Ii8+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojRDgwMDI3OyIgcG9pbnRzPSIyODgsODUuMzMgMjI0LDg1LjMzIDIyNCwyMjMuOTk2IDAsMjIzLjk5NiAwLDI4Ny45OTYgMjI0LDI4Ny45OTYgMjI0LDQyNi42NjIgMjg4LDQyNi42NjIgDQoJMjg4LDI4Ny45OTYgNTEyLDI4Ny45OTYgNTEyLDIyMy45OTYgMjg4LDIyMy45OTYgIi8+DQo8Zz4NCgk8cG9seWdvbiBzdHlsZT0iZmlsbDojMDA1MkI0OyIgcG9pbnRzPSIzOTMuNzg1LDMxNS4zNTggNTEyLDM4MS4wMzQgNTEyLDMxNS4zNTggCSIvPg0KCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiMwMDUyQjQ7IiBwb2ludHM9IjMxMS42NTIsMzE1LjM1OCA1MTIsNDI2LjY2MiA1MTIsMzk1LjE4OCAzNjguMzA3LDMxNS4zNTggCSIvPg0KCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiMwMDUyQjQ7IiBwb2ludHM9IjQ1OC42MzQsNDI2LjY2MiAzMTEuNjUyLDM0NC45OTggMzExLjY1Miw0MjYuNjYyIAkiLz4NCjwvZz4NCjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNGMEYwRjA7IiBwb2ludHM9IjMxMS42NTIsMzE1LjM1OCA1MTIsNDI2LjY2MiA1MTIsMzk1LjE4OCAzNjguMzA3LDMxNS4zNTggIi8+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojRDgwMDI3OyIgcG9pbnRzPSIzMTEuNjUyLDMxNS4zNTggNTEyLDQyNi42NjIgNTEyLDM5NS4xODggMzY4LjMwNywzMTUuMzU4ICIvPg0KPGc+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6IzAwNTJCNDsiIHBvaW50cz0iOTAuMzQxLDMxNS4zNTYgMCwzNjUuNTQ2IDAsMzE1LjM1NiAJIi8+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6IzAwNTJCNDsiIHBvaW50cz0iMjAwLjM0OCwzMjkuNTEgMjAwLjM0OCw0MjYuNjYxIDI1LjQ5MSw0MjYuNjYxIAkiLz4NCjwvZz4NCjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNEODAwMjc7IiBwb2ludHM9IjE0My42OTMsMzE1LjM1OCAwLDM5NS4xODggMCw0MjYuNjYyIDAsNDI2LjY2MiAyMDAuMzQ4LDMxNS4zNTggIi8+DQo8Zz4NCgk8cG9seWdvbiBzdHlsZT0iZmlsbDojMDA1MkI0OyIgcG9pbnRzPSIxMTguMjE1LDE5Ni42MzQgMCwxMzAuOTU4IDAsMTk2LjYzNCAJIi8+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6IzAwNTJCNDsiIHBvaW50cz0iMjAwLjM0OCwxOTYuNjM0IDAsODUuMzMgMCwxMTYuODA0IDE0My42OTMsMTk2LjYzNCAJIi8+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6IzAwNTJCNDsiIHBvaW50cz0iNTMuMzY2LDg1LjMzIDIwMC4zNDgsMTY2Ljk5NCAyMDAuMzQ4LDg1LjMzIAkiLz4NCjwvZz4NCjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNGMEYwRjA7IiBwb2ludHM9IjIwMC4zNDgsMTk2LjYzNCAwLDg1LjMzIDAsMTE2LjgwNCAxNDMuNjkzLDE5Ni42MzQgIi8+DQo8cG9seWdvbiBzdHlsZT0iZmlsbDojRDgwMDI3OyIgcG9pbnRzPSIyMDAuMzQ4LDE5Ni42MzQgMCw4NS4zMyAwLDExNi44MDQgMTQzLjY5MywxOTYuNjM0ICIvPg0KPGc+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6IzAwNTJCNDsiIHBvaW50cz0iNDIxLjY1OSwxOTYuNjM2IDUxMiwxNDYuNDQ2IDUxMiwxOTYuNjM2IAkiLz4NCgk8cG9seWdvbiBzdHlsZT0iZmlsbDojMDA1MkI0OyIgcG9pbnRzPSIzMTEuNjUyLDE4Mi40ODIgMzExLjY1Miw4NS4zMzEgNDg2LjUwOSw4NS4zMzEgCSIvPg0KPC9nPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6I0Q4MDAyNzsiIHBvaW50cz0iMzY4LjMwNywxOTYuNjM0IDUxMiwxMTYuODA0IDUxMiw4NS4zMyA1MTIsODUuMzMgMzExLjY1MiwxOTYuNjM0ICIvPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" /></a>
+        </div>
+        <!-- Barre de navigation -->
+        <nav id="nav">
+            <ul>
+                <li><a href="Index.html"><i id="home" aria-hidden="True" class="fas fa-home"></i></a></li>
+                <li><a href="Presentation.html">Présentation</a></li>
+                <li><a href="Programme.html">Programme</a></li>
+                <li><a href="apresliut.html">Après l'IUT</a></li>
+                <li><a href="BUT.html">Vers le BUT</a></li>
+                <li><a href="entreprise.html">Espace entreprise &nbsp<i id="blue" class="far fa-user-circle"></i></a></li>
+            </ul>
+            <form method="get" action="Index.html">
+                <input type="hidden" name="a"class="search" value="search">
+                <input type="search" name="s"class="search" placeholder="Rechercher...">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </nav>
+    </section>
+    <section class="main">
+        <!-- mettre le contenu ici -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- mettre le contenu au dessus -->
+    <footer>
+        <div class="footer-content">
+            <div class="contact">
+                <h2>Contact</h2>
+                <button>
+                    <a href="mailto:matheobalens@gmail.com">Envoyer un mail</a>
+                    <i id="iconmail" class="fas fa-mail-bulk"></i>
+                </button>
+            </div>
+        </div>
+        <div class="bp"><div class="grp">
+            <h2>Participants au projet</h2>
+            <ul>
+                <li><a href="CV_matheo.html">Mathéo Balens</a></li>
+                <li><a href="CV_gregory.html">Grégory Bertaut</a></li>
+                <li><a href="CV_corentin.html">Corentin Crepy</a></li>
+            </ul>
+        </div>
+        <div class="photos">
+            <ul class="tromb">
+                <li><a href="CV_matheo.html"><img src="./Images/portrait.png" alt="Mathéo"></a></li>
+                <li><a href="CV_gregory.html"><img src="./Images/Portrait2.png" alt="Grégory"></a></li>
+                <li><a href="CV_corentin.html"><img src="./Images/Portrait3.png" alt="Corentin"></a></li>
+            </ul>
+        </div>
+        <p id="sources"><a href="docs.html">Documents relatifs à la création du projet</a></p>
+    </footer>
+</section>
+</body>
+</html>
